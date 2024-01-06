@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <div class="logo_image">
+      <img src="images/logo.svg" alt="logo_img" class="img_logo">
+    </div>
+    <div class="div_container">
+    <section class="left_container">
+      <div class="bill_form">
+        <div id="error_bill">can't be zero</div>
+        <form>
+          <label for="bill_input">Bill</label>
+          <input type="text" name="bill"  value="145" class="bill_input">
+        </form>
+      </div>
+      <div class="tip_selector">
+        <p>Select Tip %</p>
+        <div class="tips">
+          <button id="percent_button" data-percentage="5">5%</button>
+          <button id="percent_button" data-percentage="10">10%</button>
+          <button id="percent_button" data-percentage="15">15%</button>
+          <button id="percent_button" data-percentage="25">25%</button>
+          <button id="percent_button" data-percentage="50">50%</button>
+          <button>
+            <input type="text" name="custom" value="Custom" id="tips_input_value" class="tips_input">
+          </button>
+        </div>
+      </div>
+        <div class="number">
+          <form>
+            <div id="error_people">can't be zero</div>
+            <label for="people_input">Number of People</label>
+            <input type="text" name="people" value="3" id="people_input" class="people_input">
+          </form>
+        </div>
+      
+    </section>
+    <aside class="right_container">
+      <div class="right_form">
+        <div>
+        <div class="right_form_top">
+          <div class="inside_amount">Tip Amount<span>/ person</span></div>
+          <div id="amount_tip" class="amount_tip">$7.25</div>
+        </div>
+        <div class="right_form_middle">
+          <div class="inside_person">Total <span>/ person</span></div>
+          <div id="person_tip" class="person_tip number">$21.75</div>
+        </div>
+      </div>
+            <form id="right_submit">
+            <button class="right_submit"  type="reset">Reset</button>
+          </form>
+        </div>
+        
+    </aside>
+  </div>
+  </main>
+  
+</body>
+<footer><div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Donatas B.</a>.
+</div>
+</footer>
+<script src="script.js"></script>
+</html>
